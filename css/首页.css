@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f5f5f5;
+}
+/*头部*/
+header {
+  width: 100%;
+  background-color: #ff8a00;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+header a img {
+  height: 3.5rem;
+}
+header a:nth-of-type(1) {
+  flex: 4;
+}
+header a:nth-of-type(2) {
+  flex: 1;
+}
+header a:nth-of-type(3) {
+  flex: 1;
+}
+/*搜索*/
+.nev {
+  width: 100%;
+  height: 29.5rem;
+  background: url(../image/index/banner.png) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.nev .sou {
+  width: 90%;
+  height: 3rem;
+  margin: 0 auto;
+  border: 0.1rem solid #2c2c2c;
+  border-radius: 0.5rem;
+  background-color: white;
+  position: absolute;
+  left: 2rem;
+  bottom: 1rem;
+}
+.nev .sou span {
+  float: left;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url(../image/index/seach.jpg) no-repeat;
+  background-size: contain;
+  margin: 0.7rem;
+}
+.nev .sou input {
+  width: 85%;
+  height: 2.9rem;
+  border: none;
+  outline: none;
+}
+/*图标*/
+.label {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ff8a00;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+.label li {
+  width: 20%;
+  text-align: center;
+}
+.label li a {
+  text-decoration: none;
+  color: white;
+}
+.label li img {
+  width: 100%;
+}
+/*图片*/
+.banner {
+  width: 100%;
+  margin: 1rem 0;
+}
+.banner img {
+  width: 100%;
+}
+/*热门房源*/
+.main {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+.main .ner {
+  height: 5rem;
+  background-color: #ff8a00;
+  box-sizing: border-box;
+  padding: 0.5rem 2rem;
+}
+.main .ner h2 {
+  color: white;
+  line-height: 3rem;
+}
+.main .ner p {
+  color: white;
+  font-size: 1rem;
+}
+.main ul {
+  list-style: none;
+  margin: 0 2rem;
+}
+.main ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  border-bottom: 0.1rem solid red;
+}
+.main ul li .img img {
+  width: 8rem;
+  height: 8rem;
+}
+.main ul li .text h3 {
+  width: 26rem;
+  font-size: 2.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.main ul li .text p {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+  color: black;
+  overflow: hidden;
+}
+.main ul li .text p span {
+  color: #FF8A00;
+  float: right;
+}
+.main ul li .text p a {
+  text-decoration: none;
+  color: #849aae;
+  padding: 0.2rem 0.4rem;
+  background-color: #F4F7F9;
+}
+.main ul li .text p:nth-of-type(2) {
+  color: #999999;
+}
+.main ul li .text p:nth-of-type(2) span {
+  color: #999999;
+}
+.main ul li:nth-of-type(3) {
+  border: none;
+}
+/*热门关注*/
+section {
+  background-color: white;
+  border-top: 1px solid #e5e5e5;
+}
+section ul {
+  list-style: none;
+}
+section .list1 {
+  display: flex;
+  font-size: 2rem;
+  border-bottom: 1px solid #ff8a00;
+  line-height: 5.4rem;
+}
+section .list1 li {
+  flex: 1;
+  text-align: center;
+}
+section .list1 li:nth-of-type(1) {
+  color: #ff8a00;
+  border-bottom: 1px solid #ff8a00;
+}
+.cen {
+  display: flex;
+}
+.cen ul {
+  flex: 1;
+  font-size: 1.5rem;
+  margin: 1.5rem 0 1.5rem 2rem;
+}
+.cen ul li {
+  line-height: 3rem;
+}
+/*脚部*/
+footer {
+  background: #2f3130;
+  color: #939494;
+  padding: 0 1.8rem;
+}
+footer h2 {
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  border-bottom: 1px solid #3e403f;
+}
+footer .con {
+  padding: 1.5rem 0;
+}
+footer .con ul {
+  list-style: none;
+  display: flex;
+}
+footer .con ul li {
+  flex: 1;
+  display: flex;
+  text-align: center;
+  justify-items: center;
+}
+footer .con ul li img {
+  width: 3rem;
+  height: 3.5rem;
+  margin-right: 2rem;
+  margin-left: 1rem;
+}
+footer .con ul li div P {
+  font-size: 1.5rem;
+}
+footer .con .text {
+  text-align: center;
+  margin-top: 2rem;
+}
+footer .con .text p {
+  font-size: 1.7rem;
+}
+/*广告*/
+.filed {
+  width: 100%;
+  height: 6rem;
+  line-height: 4rem;
+  background: rgba(96, 99, 97, 0.5);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  padding-left: 2rem;
+}
+.filed .img {
+  width: 2rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.filed .left {
+  flex: 6;
+  display: flex;
+  justify-content: space-around;
+}
+.filed .left .image img {
+  width: 4rem;
+  height: 4rem;
+  margin-top: 1rem;
+}
+.filed .left .txt {
+  color: white;
+  font-size: 1.6rem;
+}
+.filed .left .txt p:nth-of-type(1) {
+  height: 2.8rem;
+  font-size: 2.5rem;
+}
+.filed .left .txt p:nth-of-type(2) {
+  height: 1rem;
+}
+.filed .right {
+  background: #ff8a00;
+  flex: 4;
+  text-align: center;
+}
+.filed .right a {
+  color: white;
+  line-height: 6rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
