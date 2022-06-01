@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #F1F3F4;
+}
+html {
+  font-size: 10px;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+header {
+  width: 100%;
+  height: 6rem;
+  background-color: #FF8A00;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+header h1 {
+  flex: 2;
+  height: 4.5rem;
+  margin-left: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .conter {
+  flex: 1;
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .conter a img {
+  width: 37px;
+  height: 41px;
+  padding-left: 10px;
+}
+.nav {
+  width: 100%;
+  height: 4rem;
+  background-color: #fff;
+}
+.nav p {
+  font-size: 18px;
+  text-indent: 1rem;
+  line-height: 4rem;
+}
+.nav p span {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.dl {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  line-height: 6rem;
+  font-size: 1.8rem;
+  background-color: #fff;
+  justify-content: space-around;
+}
+.dl .left {
+  width: 50%;
+  border-bottom: 0.4rem solid #FF8A00;
+}
+.dl .right {
+  width: 50%;
+}
+ul {
+  width: 100%;
+  position: absolute;
+}
+ul li {
+  width: 100%;
+  height: 5rem;
+  margin-bottom: 3px;
+}
+ul li input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 18px;
+  text-indent: 1rem;
+  outline: none;
+}
+ul > li:nth-of-type(3) {
+  width: 95%;
+  height: 5rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+ul .longe {
+  background-color: #FF8A00;
+  color: #fff;
+}
+#top {
+  position: absolute;
+  top: 160px;
+  left: 0px;
+  display: none;
+}
+#top .yzm {
+  width: 106px;
+  height: 33px;
+  position: absolute;
+  top: 7px;
+  right: 23px;
+  line-height: 33px;
+  text-align: center;
+  color: #5F6368;
+  font-size: 16px;
+  border: 1px solid #5F6368;
+}
+.bor {
+  border-bottom: 0.4rem solid #FF8A00;
+  width: 50%;
+}
+.ko {
+  width: 50%;
+}
+.foots {
+  width: 100%;
+  height: 4rem;
+}
+.foots a {
+  line-height: 4rem;
+  font-size: 1.6rem;
+}
+.foots > a:nth-of-type(1) {
+  float: left;
+  padding-left: 0.6rem;
+  color: #FF8A00;
+}
+.foots > a:nth-of-type(2) {
+  float: right;
+  padding-right: 0.6rem;
+  color: gray;
+}

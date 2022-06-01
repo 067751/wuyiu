@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>找回密码</title>
 </head>
+<link rel="stylesheet" href="./css/找回密码.css">
+
 <body>
-    
+    <!-- 头部 -->
+    <header>
+        <h1>
+            <a href=""><img src="./image/index/logo.jpg" alt="" width="200px" height="50px"></a>
+        </h1>
+        <div class="conter">
+            <a href=""><img src="./image/index/my.jpg" alt=""></a>
+            <a href=""><img src="./image/index/xiazai.jpg" alt=""></a>
+        </div>
+    </header>
+    <div class="nav">
+        <p><span>首页</span> > 找回密码</p>
+    </div>
+    <!-- 注册信息 -->
+    <ul>
+        <li>
+            <input type="text" name="" id="phone" placeholder="请输入手机号码">
+        </li>
+        <li><input type="text" name="" id="yzmv" placeholder="请输入短信中的验证码"></li>
+        <li><input type="password" name="" id="password" placeholder="请输入新密码"></li>
+        <li><input type="password" name="" id="passworda" placeholder="请输入确认密码"></li>
+        <li><input type="button" value="提交" class="click" onclick="fn()"></li>
+        <div class="yzm" onclick="yz()">发送验证码</div>
+    </ul>
 </body>
+
 </html>
+<script src="./js/找回密码.js"></script>

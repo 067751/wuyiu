@@ -1,12 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<link rel="stylesheet" href="../wuyiu/css/登录.css">
+
 <body>
-    
+    <!-- 头部 -->
+    <header>
+        <h1>
+            <a href=""><img src="./image/index/logo.jpg" alt="" width="200px" height="50px"></a>
+        </h1>
+        <div class="conter">
+            <a href=""><img src="./image/index/my.jpg" alt=""></a>
+            <a href=""><img src="./image/index/xiazai.jpg" alt=""></a>
+        </div>
+    </header>
+    <div class="nav">
+        <p><span>首页</span> > 我的 > 登录</p>
+    </div>
+    <!-- 登录 -->
+    <div class="dl">
+        <div class="left">普通登录</div>
+        <div class="right">验证码快捷登录</div>
+    </div>
+    <ul>
+        <li><input type="text" name="" id="ipone" placeholder="请输入手机号码"></li>
+        <li><input type="password" name="" id="pasd" placeholder="请输入密码"></li>
+        <li><input type="submit" value="立即登录" class="longe" class="que"></li>
+        <div class="foots">
+            <a href="./注册页.html">立即注册</a> <a href="./找回密码.html">忘记密码</a>
+        </div>
+    </ul>
+    <!-- 验证码登录 -->
+    <ul id="top">
+        <li><input type="text" name="" id="sjh" placeholder="请输入手机号码"></li>
+        <li><input type="text" name="" id="yzma" placeholder="请输入短信中的验证码"></li>
+        <div class="yzm" onclick="yz()">发送验证码</div>
+    </ul>
 </body>
+
 </html>
+<script>
+    //获取随机验证码
+    var yzm = document.getElementsByClassName('yzm')[0];
+    var itme = 60;
+    var time;
+    var sj = Math.floor(Math.random() * 9000 + 1000);
+    console.log(sj);
+    function yz() {
+        clearInterval(time);;
+        time = setInterval(function () {
+            itme--;
+            yzm.innerHTML = "(" + itme + ")秒 重发";
+            if (itme == 56) {
+                alert(sj);
+
+            } else if (itme < 0) {
+                clearInterval(time);
+                yzm.innerHTML = "发送验证码";
+            }
+        }, 1000)
+    }
+    var right_ = document.getElementsByClassName('right')[0];
+    var left_ = document.getElementsByClassName('left')[0];
+    var top_ = document.getElementById('top');
+    right_.onclick = function () {
+        top_.style.display = "block";
+        right_.className = "bor";
+        left_.style.borderBottom = "none";
+    }
+    left_.onclick = function () {
+        top_.style.display = "none";
+        right_.className = 'ko';
+        left_.style.borderBottom = "4px solid #FF8A00"
+    }
+    //登录验证
+    var longe = document.getElementsByClassName('longe')[0];//获取立即登录
+    //获取手机号  密码
+    var phone = localStorage.getItem('手机号');
+    var password = localStorage.getItem('password');
+    longe.onclick = function () {//给立即登录绑定点击事件
+        //普通登陆验证
+        var ipone = document.getElementById('ipone').value;
+        var pasd = document.getElementById('pasd').value;
+        if (ipone == phone && pasd == password) {
+            alert('登录成功');
+            location.href = "./我的.html";
+        } else if (ipone !== phone) {
+            alert("登陆失败,手机号或密码错误或没有注册");
+        }
+        var sjh = document.getElementById('sjh').value;
+        var yzma = document.getElementById('yzma').value;
+        if (sjh == phone && yzma == sj) {
+            alert('登录成功');
+            location.href = "./我的.html";
+        }
+    }
+
+</script>
