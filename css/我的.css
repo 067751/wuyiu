@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.box {
+  width: 100%;
+  background-color: #F5F5F5;
+}
+.box header {
+  width: 100%;
+  height: 70px;
+  background-color: #FF8A00;
+  display: flex;
+  flex-direction: row;
+}
+.box header span {
+  height: 50px;
+}
+.box header > span:nth-of-type(1) {
+  flex: 3;
+  margin-left: 40px;
+  padding-top: 2px;
+}
+.box header > span:nth-of-type(2) {
+  flex: 1;
+  margin-left: 90px;
+}
+.box header > span:nth-of-type(2) img {
+  width: 50px;
+  height: 50px;
+  padding-top: 13px;
+}
+.box header > span:nth-of-type(3) {
+  flex: 1;
+}
+.box header > span:nth-of-type(3) img {
+  width: 50px;
+  height: 50px;
+  padding-top: 13px;
+}
+.box .my {
+  width: 100%;
+  height: 70px;
+  background-color: #FFF;
+}
+.box .my p {
+  line-height: 70px;
+  text-indent: 2rem;
+}
+.box .my p span {
+  font-size: 20px;
+  font-weight: 600;
+}
+.box .bj {
+  width: 100%;
+  height: 240px;
+  background: url(../image/my/bg1.png);
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+}
+.box .bj span {
+  margin: 0px auto;
+}
+.box .bj > span:nth-of-type(1) {
+  flex: 3;
+}
+.box .bj > span:nth-of-type(1) img {
+  width: 100px;
+  height: 100px;
+  padding-top: 50px;
+}
+.box .bj > span:nth-of-type(2) {
+  flex: 1;
+  font-size: 21px;
+  font-weight: 600;
+  color: white;
+}
+.box .txt {
+  width: 100%;
+  height: 300px;
+  background-color: #fff;
+}
+.box .txt p {
+  width: 95%;
+  height: 80px;
+  margin: 6px auto;
+  border-bottom: 1px solid gray;
+  background: url(../image/my/right.png) no-repeat right center;
+}
+.box .txt p a {
+  text-decoration: none;
+  color: #666666;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 80px;
+}
+.box .foot {
+  width: 100%;
+  height: 140px;
+}
+.box .foot .tc {
+  width: 90%;
+  height: 80px;
+  background-color: #fff;
+  margin: 40px auto;
+}
+.box .foot .tc a {
+  text-decoration: none;
+  line-height: 80px;
+  font-size: 25px;
+  color: #FE6E00;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

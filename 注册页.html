@@ -1,12 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<link rel="stylesheet" href="./css/注册.css">
+
 <body>
-    
+    <!-- 头部 -->
+    <header>
+        <h1>
+            <a href=""><img src="./image/index/logo.jpg" alt="" width="180px" height="45px"></a>
+        </h1>
+        <div class="conter">
+            <a href=""><img src="./image/index/my.jpg" alt=""></a>
+            <a href=""><img src="./image/index/xiazai.jpg" alt=""></a>
+        </div>
+    </header>
+    <div class="nav">
+        <p><span>首页</span> > 我的 > 注册</p>
+    </div>
+    <!-- 注册信息 -->
+    <ul>
+        <li>
+            <input type="text" name="" id="phone" placeholder="请输入手机号码">
+        </li>
+        <li><input type="text" name="" id="yzmv" placeholder="请输入短信中的验证码"></li>
+        <li><input type="password" name="" id="password" placeholder="请输入新密码"></li>
+        <li><input type="button" value="立即注册" class="click" onclick="fn()"></li>
+        <div class="yzm" onclick="yz()">发送验证码</div>
+    </ul>
 </body>
+
 </html>
+<script>
+    var yzm = document.getElementsByClassName('yzm')[0];
+    var phone = document.getElementById('phone');
+    var itme = 60;
+    var time;
+    var yzmv = document.getElementById('yzmv');
+    //获取随机四位数
+    var sj = Math.floor(Math.random() * 9000 + 1000);
+    //验证码
+    function yz() {
+        clearInterval(time);;
+        time = setInterval(function () {
+            itme--;
+            yzm.innerHTML = "(" + itme + ")秒 重发";
+            if (itme == 56) {
+                alert(sj);
+
+            } else if (itme < 0) {
+                clearInterval(time);
+                yzm.innerHTML = "发送验证码";
+            }
+        }, 1000)
+    }
+
+    // 整体验证
+    function fn() {
+        //验证码验证
+        var value_ = yzmv.value;
+        if (value_ != sj) {
+            alert('验证码错误');
+        }
+        //手机号验证
+        var arr = /^1[3|4|5|7|8][0-9]\d{8}$/;
+        var val = phone.value;
+        if (!arr.test(val)) {
+            alert('请输入正确的11位手机号');
+            return false;
+        } else if (val == "") {
+            alert('手机号不能为空')
+        }
+        //密码验证
+        var password = document.getElementById('password');
+        var arra = /^[A-z0-9_]{6,11}$/;
+        var vala = password.value;
+        if (!arra.test(vala)) {
+            alert('6-12位内,数字字母下划线,不能为空');
+        }
+
+        localStorage.setItem('手机号', val);
+        localStorage.setItem('password', vala);
+        window.location.href = "./登录.html";
+    }
+</script>
