@@ -1,0 +1,15 @@
+.main ul li .right p:nth-of-type(2) {
+  color: #B0B0B0;
+}
+.main ul li .right p:nth-of-type(2) span {
+  color: #FF8A00;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+.main ul li .right p:nth-of-type(3) {
+  color: #B0B0B0;
+  margin-top: 0;
+}
+.main ul li:nth-last-of-type(1) {
+  border: none;
+}

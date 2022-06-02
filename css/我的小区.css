@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*头部*/
+header {
+  width: 100%;
+  background-color: #ff8a00;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+header a img {
+  height: 3.5rem;
+}
+header a:nth-of-type(1) {
+  flex: 4;
+}
+header a:nth-of-type(2) {
+  flex: 1;
+}
+header a:nth-of-type(3) {
+  flex: 1;
+}
+.label {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem;
+  border-bottom: 1px solid #e8e5e5;
+  font-size: 1.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+}
+.label span:nth-of-type(1) {
+  color: black;
+  font-weight: 900;
+}
+.label span {
+  margin-right: 0.5rem;
+}
+.main {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.main ul {
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0 2.5rem;
+}
+.main ul li {
+  display: flex;
+  padding: 2rem 0;
+  border-bottom: 1px solid #ff8a00;
+  justify-content: space-between;
+  align-items: center;
+}
+.main ul li .left img {
+  width: 9rem;
+  height: 9rem;
+}
+.main ul li .right {
+  width: 29.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+}
+.main ul li .right h3 {
+  font-size: 2rem;
+}
+.main ul li .right p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.main ul li .right p strong {
+  color: #ff8a00;
+  margin-left: 3rem;
+}
+.main ul li .right p:nth-of-type(1) {
+  margin-top: 0.5rem;
+}
+.main ul li:nth-last-of-type(1) {
+  border: none;
+}

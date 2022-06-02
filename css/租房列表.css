@@ -1,0 +1,303 @@
+/*搜索框*/
+.nav {
+  background-color: #f5f5f5;
+  position: relative;
+}
+.nav input {
+  width: 90%;
+  height: 4rem;
+  margin: 2rem 0;
+  outline: none;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  text-indent: 2rem;
+}
+.nav span {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 2.7rem;
+  right: 8rem;
+}
+.nav a {
+  position: absolute;
+  top: 2.8rem;
+  right: 4.5rem;
+}
+.nav a img {
+  width: 1.8rem;
+}
+/*蒙版*/
+.mb {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+/*区域*/
+.list {
+  width: 100%;
+  height: 5rem;
+  line-height: 5rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.7rem;
+}
+.list li {
+  position: relative;
+}
+.list li h2 .a {
+  text-decoration: none;
+  color: #666666;
+}
+.list li h2 .a span {
+  border-top: 5px solid #ccc;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid transparent;
+  position: absolute;
+  top: 1.6rem;
+  right: -1.4rem;
+}
+.list li h2 .active {
+  text-decoration: none;
+  color: #ff8a00;
+}
+.list li h2 .active span {
+  border-top: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #ff8a00;
+  border-left: 5px solid transparent;
+  top: 1.2rem;
+}
+.list1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+/*隐藏部分*/
+.hide {
+  width: 100%;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  background-color: white;
+  /*区域*/
+  /*月租*/
+  /*房型*/
+  /*更多*/
+}
+.hide .li1 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.hide .li1 .text {
+  flex: 1;
+  background-color: #f0f0f0;
+  border-right: 1px solid #ccc;
+  text-align: center;
+  font-size: 1.7rem;
+}
+.hide .li1 .text h2 {
+  width: 100%;
+  height: 5.5rem;
+  line-height: 5.5rem;
+}
+.hide .li1 .text h2:nth-of-type(1) {
+  color: #ff8a00;
+  background-color: white;
+  margin-right: -1px;
+  border-right: 2px solid white;
+}
+.hide .li1 .lis {
+  flex: 3;
+}
+.hide .li1 .lis ul {
+  width: 100%;
+  list-style: none;
+}
+.hide .li1 .lis ul li {
+  float: left;
+  width: 45%;
+  height: 6.1rem;
+  line-height: 5.5rem;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #848383;
+}
+.hide .li2 {
+  width: 100%;
+  display: none;
+}
+.hide .li2 ul {
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0 3rem;
+}
+.hide .li2 ul li {
+  height: 5rem;
+  line-height: 5rem;
+  border-bottom: 1px solid #b0b0b0;
+}
+.hide .li2 ul li a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #666666;
+}
+.hide .li3 {
+  width: 100%;
+  display: none;
+}
+.hide .li3 ul {
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0 3rem;
+}
+.hide .li3 ul li {
+  height: 5rem;
+  line-height: 5rem;
+  border-bottom: 1px solid #b0b0b0;
+  font-size: 1.5rem;
+}
+.hide .li3 ul li span {
+  float: right;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #ccc;
+  margin-top: 1.5rem;
+  margin-right: 3rem;
+}
+.hide .li3 ul li:nth-last-of-type(1) {
+  border: none;
+  text-align: center;
+  background-color: #ff8a00;
+}
+.hide .li3 ul li:nth-last-of-type(1) a {
+  display: inline-block;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+}
+.hide .li3 ul li:nth-last-of-type(2) {
+  border: none;
+}
+.hide .li3 ul li:nth-of-type(3) span {
+  border: 1px solid #ff8a00;
+  background: url(../image/二手房/ok.png) no-repeat center center;
+}
+.hide .li4 {
+  width: 100%;
+  display: none;
+}
+.hide .li4 .lisn {
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0 3rem;
+}
+.hide .li4 .lisn .lit {
+  box-sizing: border-box;
+  padding: 2rem 0;
+  border-bottom: 1px solid #ccc;
+}
+.hide .li4 .lisn .lit h3 {
+  font-size: 2rem;
+}
+.hide .li4 .lisn .lit .childList {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.hide .li4 .lisn .lit .childList li {
+  width: 22%;
+  text-align: center;
+  padding: 1rem 0;
+  border: 1px solid #666666;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+/*小区详情*/
+.main ul li {
+  padding: 3rem 0;
+}
+.main ul li .left img {
+  width: 11rem;
+  height: 11rem;
+}
+.main ul li .right {
+  width: 27rem;
+}
+.main ul li .right p:nth-of-type(1) {
+  margin-top: 1.5rem;
+}
+.main ul li .right p {
+  margin-top: 0.5rem;
+  font-size: 1.6rem;
+}
+.main ul li .right p:nth-last-of-type(1) {
+  margin-top: 1rem;
+  padding: 1rem 0;
+}
+.main ul li .right p:nth-last-of-type(1) span:nth-of-type(1) {
+  padding: 0.5rem 0.8rem;
+  box-sizing: border-box;
+  border: 1px solid #6da719;
+  color: #6da719;
+}
+.main ul li .right p:nth-last-of-type(1) span:nth-of-type(2) {
+  float: right;
+  font-weight: 600;
+  color: #ff8a00;
+}
+/*脚部*/
+footer {
+  background: #2f3130;
+  color: #939494;
+  padding: 0 1.8rem;
+}
+footer h2 {
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  border-bottom: 1px solid #3e403f;
+}
+footer .con {
+  padding: 1.5rem 0;
+}
+footer .con ul {
+  list-style: none;
+  display: flex;
+}
+footer .con ul li {
+  flex: 1;
+  display: flex;
+  text-align: center;
+  justify-items: center;
+}
+footer .con ul li img {
+  width: 3rem;
+  height: 3.5rem;
+  margin-right: 2rem;
+  margin-left: 1rem;
+}
+footer .con ul li div P {
+  font-size: 1.5rem;
+}
+footer .con .text {
+  text-align: center;
+  margin-top: 2rem;
+}
+footer .con .text p {
+  font-size: 1.7rem;
+}

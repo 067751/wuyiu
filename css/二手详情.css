@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f5f5f5;
+}
+/*头部*/
+header {
+  width: 100%;
+  background-color: #ff8a00;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+header a img {
+  height: 3.5rem;
+}
+header a:nth-of-type(1) {
+  flex: 4;
+}
+header a:nth-of-type(2) {
+  flex: 1;
+}
+header a:nth-of-type(3) {
+  flex: 1;
+}
+/*第一块*/
+.one {
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #e5e5e5;
+}
+.one .img {
+  width: 100%;
+  position: relative;
+}
+.one .img img {
+  width: 100%;
+}
+.one .img .t {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  color: white;
+  font-size: 1.8rem;
+  padding: 0 1.5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+.one .text {
+  padding: 3rem;
+}
+.one .text h1 {
+  font-size: 2.6rem;
+}
+.one .text p {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+.one .text p:nth-of-type(1) {
+  background: url(../image/二手房/phone.png) no-repeat right center;
+}
+.one .text p:nth-of-type(1) span {
+  color: red;
+  font-weight: 600;
+}
+.one .text p:nth-of-type(2) {
+  color: #b0b0b0;
+}
+.one .text p:nth-of-type(3) {
+  margin-top: 3rem;
+}
+.one .text p:nth-of-type(3) span {
+  padding: 1rem 0.5rem;
+  color: #849aae;
+  background-color: #dee9f0;
+  margin-right: 1rem;
+}
+.kai {
+  margin-top: 2rem;
+  padding: 0 2rem;
+  list-style: none;
+  background-color: white;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+/*第二块*/
+.list li {
+  display: flex;
+  height: 6rem;
+  line-height: 6rem;
+  font-size: 1.7rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+.list li p {
+  width: 48%;
+}
+.list li h1 {
+  font-size: 2.5rem;
+  color: #ff8a00;
+}
+.list li:nth-last-of-type(1) {
+  border: none;
+  color: #999999;
+  justify-content: center;
+}
+/*第三块*/
+.Uls li {
+  border-bottom: 1px solid #e5e5e5;
+}
+.Uls li h1 {
+  padding: 2rem 0;
+  color: #ff8a00;
+}
+.Uls li p {
+  padding: 2rem 0;
+  font-size: 1.8rem;
+  line-height: 3.5rem;
+}
+.Uls li:nth-last-of-type(1) {
+  font-size: 1.7rem;
+  border: none;
+  color: #999999;
+  text-align: center;
+  padding: 2rem 0;
+}
+/*第四块*/
+.uls li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e5e5;
+  align-items: center;
+  padding: 2rem 0;
+}
+.uls li h1 {
+  color: #ff8a00;
+}
+.uls li .right {
+  width: 74%;
+}
+.uls li .right h2 {
+  font-size: 2rem;
+}
+.uls li .right p {
+  font-size: 1.7rem;
+  line-height: 4rem;
+}
+.uls li .right p:nth-of-type(2) span {
+  color: #849aae;
+  background-color: #f4f7f9;
+  padding: 0.7rem 0.5rem;
+}
+.uls li:nth-last-of-type(1) {
+  border: none;
+}
+/*第五块*/
+.list5 li {
+  height: 7rem;
+  line-height: 7rem;
+  font-size: 1.7rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+.list5 li h1 {
+  font-size: 2.5rem;
+}
+.list5 li span:nth-of-type(1) {
+  color: #999999;
+}
+.list5 li:nth-last-of-type(1) {
+  border: none;
+  color: #999999;
+  text-align: center;
+}
+/*第六块*/
+.list6 li {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 2rem 0;
+}
+.list6 li h1 {
+  font-size: 2.5rem;
+}
+.list6 li img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.list6 li:nth-last-of-type(1) {
+  border: none;
+}
+/*第七块*/
+.list7 li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 2rem 0;
+  position: relative;
+}
+.list7 li h1 {
+  font-size: 2.5rem;
+}
+.list7 li .left {
+  width: 28%;
+}
+.list7 li .left img {
+  width: 100%;
+}
+.list7 li .right {
+  width: 68%;
+}
+.list7 li .right h2 {
+  font-size: 2.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.list7 li .right p {
+  font-size: 1.7rem;
+  line-height: 4rem;
+}
+.list7 li .right p:nth-of-type(1) span {
+  float: right;
+  color: #ff8a00;
+  font-weight: 600;
+}
+.list7 li .right p:nth-of-type(2) {
+  color: #999999;
+}
+.list7 li .right p:nth-of-type(2) span {
+  float: right;
+}
+.list7 li .right p:nth-last-of-type(1) span {
+  color: #849aae;
+  background-color: #f4f7f9;
+  padding: 0.5rem;
+}
+.list7 li .nav {
+  width: 100%;
+  height: 5rem;
+  line-height: 5rem;
+  background-color: #f2f2f2;
+  font-size: 1.7rem;
+  text-indent: 2rem;
+}
+.list7 li .san {
+  position: absolute;
+  bottom: 7rem;
+  left: 1rem;
+  border-top: 1rem solid transparent;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-bottom: 1rem solid #f2f2f2;
+}
+.list7 li:nth-last-of-type(1) {
+  border: none;
+  font-size: 1.7rem;
+  color: #999999;
+  justify-content: center;
+}
+/*脚部*/
+footer {
+  background: #2f3130;
+  color: #939494;
+  padding: 0 1.8rem;
+}
+footer h2 {
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  border-bottom: 1px solid #3e403f;
+}
+footer .con {
+  padding: 1.5rem 0;
+}
+footer .con ul {
+  list-style: none;
+  display: flex;
+}
+footer .con ul li {
+  flex: 1;
+  display: flex;
+  text-align: center;
+  justify-items: center;
+}
+footer .con ul li img {
+  width: 3rem;
+  height: 3.5rem;
+  margin-right: 2rem;
+  margin-left: 1rem;
+}
+footer .con ul li div P {
+  font-size: 1.5rem;
+}
+footer .con .text {
+  text-align: center;
+  margin-top: 2rem;
+}
+footer .con .text p {
+  font-size: 1.7rem;
+}
+.footer {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer a:nth-of-type(1) {
+  flex: 4;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  color: white;
+  font-size: 1.7rem;
+  border-radius: 5px;
+  background: url(../image/二手房/user.png) no-repeat 95px 13px;
+  background-color: #ff8a00;
+}
+.footer a:nth-of-type(2) {
+  flex: 2;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: #999999;
+  background: url(../image/二手房/xin.png) no-repeat 20px 13px;
+}
